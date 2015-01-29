@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <title>Angular Multiple Selection Demo</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js"></script>
+
+    <script type="text/javascript" src="multiple-selection.js"></script>
+    <script type="text/javascript">
+    angular.module('app', ['multipleSelection']);
+    </script>
+
+    <style type="text/css">
+    .row {
+        height: 3000px;
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+        /* disable selection */
+        
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .well{
+
+    }
+    .example {
+        width: 300px;
+        height: 50px;
+        background-color: grey;
+    }
+    .select-helper {
+        position: absolute;
+        border: 1px dashed red;
+        background: red;
+        opacity: 0.2;
+    }
+    .selected {
+        background-color: green;
+    }
+    .selecting {
+        background-color: yellow;
+    }
+    .dragging {
+        background-color: blue;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid" multiple-selection-zone>
+        <h1>Directives test</h1>
+        <div class="row">
+            <div multiple-selection-item class="col-md-3 well" ng-class="{'selecting': isSelecting ,'selected': isSelected, 'dragging': isDragging}" class="example">Just a div</div>
+            <div multiple-selection-item class="col-md-3 well" ng-class="{'selecting': isSelecting ,'selected': isSelected, 'dragging': isDragging}" class="example">Just a second div</div>
+            <div multiple-selection-item class="col-md-3 well" ng-class="{'selecting': isSelecting ,'selected': isSelected, 'dragging': isDragging}" class="example">Another one</div>
+            <div multiple-selection-item class="col-md-3 well" ng-class="{'selecting': isSelecting ,'selected': isSelected}" class="example">Just a last div</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

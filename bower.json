@@ -1,0 +1,17 @@
+{
+  "name": "angular-multiple-selection",
+  "version": "0.0.1",
+  "authors": [
+    "Maksym Pomazan"
+  ],
+  "description": "Multiple Selection module for AngularJS",
+  "main": "multiple-selection.js",
+  "keywords": [
+    "selection",
+    "drag",
+    "select",
+    "multiple",
+    "selection"
+  ],
+  "license": "MIT"
+}
