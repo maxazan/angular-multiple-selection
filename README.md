@@ -26,7 +26,15 @@ Download [source](https://github.com/maxazan/angular-multiple-selection/archive/
 ```
 * Add module to your app `angular.module('app', ['multipleSelection'])`
 * Add `multiple-selection-zone` attribute to element where selectable items will be located
+```html
+<div class="row" multiple-selection-zone>
+//Selectable items
+</div>
+```
 * Add `multiple-selection-item` attribute to each selectable item
+```html
+<div multiple-selection-item>Item can be selected</div>
+```
 * Customize css
 
 
