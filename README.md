@@ -1,9 +1,7 @@
-# Angular Mmultiple Selection Module
+# Angular Multiple Selection Module
 Simplest way to make your angular items selectable
 
-[Simple Demo](http://maxazan.com/angular-multiple-selection/)
-
-[Image selection Demo](http://maxazan.com/angular-multiple-selection/)
+[Demo Page](http://maxazan.github.io/angular-multiple-selection/)
 
 ##Installation
 
