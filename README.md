@@ -19,7 +19,7 @@ bower install angular-multiple-selection
 
 Download [source](https://github.com/maxazan/angular-multiple-selection/archive/master.zip) from github.com
 
-##Using
+##Usage
 * Add `multiple-selection.min.js` file to your application
 ```html
 <script type="text/javascript" src="multiple-selection.min.js"></script>
