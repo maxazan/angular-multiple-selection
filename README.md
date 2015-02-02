@@ -28,7 +28,7 @@ Download [source](https://github.com/maxazan/angular-multiple-selection/archive/
 * Add `multiple-selection-zone` attribute to element where selectable items will be located
 ```html
 <div class="row" multiple-selection-zone>
-//Selectable items
+//Add selectable items here
 </div>
 ```
 * Add `multiple-selection-item` attribute to each selectable item
@@ -65,9 +65,9 @@ Each selectable item has it`s own angular scope with variables
 * You can also customize your rectangle for selecting
 ```css
 .select-helper {
-      position: absolute;
-      border: 1px dashed red;
-      background: red;
-      opacity: 0.2;
+    position: absolute;
+    border: 1px dashed red;
+    background: red;
+    opacity: 0.2;
 }
 ```
