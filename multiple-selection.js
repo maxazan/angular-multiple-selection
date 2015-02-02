@@ -165,7 +165,7 @@ angular.module('multipleSelection', [])
                     // Check items is selecting
                     var childs = getSelectableElements(element);
                     for (var i = 0; i < childs.length; i++) {
-                        if (checkElementHitting(transformBox(offset(childs[i][0]).left, offset(childs[i][0]).top, offset(childs[i][0]).left + childs[i].prop('offsetWidth'), offset(childs[i][0]).top + childs[i].prop('offsetHeight')), transformBox(startX, startY, event.clientX, event.clientY))) {
+                        if (checkElementHitting(transformBox(offset(childs[i][0]).left, offset(childs[i][0]).top, offset(childs[i][0]).left + childs[i].prop('offsetWidth'), offset(childs[i][0]).top + childs[i].prop('offsetHeight')), transformBox(startX, startY, event.pageX, event.pageY))) {
                             if (childs[i].scope().isSelecting === false) {
                                 childs[i].scope().isSelecting = true;
                                 childs[i].scope().$apply();
