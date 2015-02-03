@@ -1,7 +1,7 @@
 /**
  * Angular JS multiple-selection module
  * @author Maksym Pomazan
- * @version 0.0.1
+ * @version 0.0.2
  */
 function getSelectableElements(element) {
     var out = [];
@@ -80,7 +80,7 @@ angular.module('multipleSelection', [])
     }])
     .directive('multipleSelectionZone', ['$document', function($document) {
         return {
-            scope: {},
+            scope: true,
             restrict: 'A',
             link: function(scope, element, iAttrs, controller) {
 
