@@ -19,14 +19,22 @@ bower install angular-multiple-selection
 
 Download [source](https://github.com/maxazan/angular-multiple-selection/archive/master.zip) from github.com
 
-##Using
+##Usage
 * Add `multiple-selection.min.js` file to your application
 ```html
 <script type="text/javascript" src="multiple-selection.min.js"></script>
 ```
 * Add module to your app `angular.module('app', ['multipleSelection'])`
 * Add `multiple-selection-zone` attribute to element where selectable items will be located
+```html
+<div class="row" multiple-selection-zone>
+//Add selectable items here
+</div>
+```
 * Add `multiple-selection-item` attribute to each selectable item
+```html
+<div multiple-selection-item>Item can be selected</div>
+```
 * Customize css
 
 
@@ -57,9 +65,9 @@ Each selectable item has it`s own angular scope with variables
 * You can also customize your rectangle for selecting
 ```css
 .select-helper {
-      position: absolute;
-      border: 1px dashed red;
-      background: red;
-      opacity: 0.2;
+    position: absolute;
+    border: 1px dashed red;
+    background: red;
+    opacity: 0.2;
 }
 ```
