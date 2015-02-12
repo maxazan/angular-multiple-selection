@@ -1,6 +1,6 @@
 {
     "name": "angular-multiple-selection",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Multiple Selection module for AngularJS",
     "main": "multiple-selection.js",
     "directories": {
