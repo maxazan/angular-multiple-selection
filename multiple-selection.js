@@ -11,7 +11,7 @@ function getSelectableElements(element) {
         if (child.scope().isSelectable) {
             out.push(child);
         } else {
-            if (child.scope().isSelectableZone === true) {
+            if (child.scope().$id!=element.scope().$id && child.scope().isSelectableZone === true) {
 
             } else {
                 out = out.concat(getSelectableElements(child));
