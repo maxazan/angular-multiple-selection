@@ -2,6 +2,7 @@
 Simplest way to make your angular items selectable
 
 [Demo Page](http://maxazan.github.io/angular-multiple-selection/)
+[See also angular-multiple-drag](https://github.com/maxazan/angular-multiple-drag)
 
 ##Installation
 
