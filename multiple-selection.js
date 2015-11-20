@@ -112,7 +112,13 @@ angular.module('multipleSelection', [])
                  * @return {Object} result Transformed object
                  */
                 function transformBox(startX, startY, endX, endY) {
+                    topBorder = element[0].offsetTop;
+                    bottomBorder = element[0].offsetHeight + topBorder;
+                    leftBorder = element[0].offsetLeft;
+                    rightBorder = element[0].offsetWidth + leftBorder;
 
+                    endY = Math.min(Math.max(topBorder, endY), bottomBorder);
+                    endX = Math.min(Math.max(leftBorder, endX), rightBorder);
                     var result = {};
 
                     if (startX > endX) {
