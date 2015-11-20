@@ -3,6 +3,9 @@
  * @author Maksym Pomazan
  * @version 0.0.3
  */
+
+
+;;(function(){
 function getSelectableElements(element) {
     var out = [];
     var childs = element.children();
@@ -112,10 +115,10 @@ angular.module('multipleSelection', [])
                  * @return {Object} result Transformed object
                  */
                 function transformBox(startX, startY, endX, endY) {
-                    topBorder = element[0].offsetTop;
-                    bottomBorder = element[0].offsetHeight + topBorder;
-                    leftBorder = element[0].offsetLeft;
-                    rightBorder = element[0].offsetWidth + leftBorder;
+                    var topBorder = element[0].offsetTop;
+                    var bottomBorder = element[0].offsetHeight + topBorder;
+                    var leftBorder = element[0].offsetLeft;
+                    var rightBorder = element[0].offsetWidth + leftBorder;
 
                     endY = Math.min(Math.max(topBorder, endY), bottomBorder);
                     endX = Math.min(Math.max(leftBorder, endX), rightBorder);
@@ -249,3 +252,4 @@ angular.module('multipleSelection', [])
             }
         };
     }]);
+})();
