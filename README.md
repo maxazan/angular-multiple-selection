@@ -5,23 +5,23 @@ Simplest way to make your angular items selectable
 
 [See also angular-multiple-drag](https://github.com/maxazan/angular-multiple-drag)
 
-##Installation
+## Installation
 
-###Using npm
+### Using npm
 ```
 npm install angular-multiple-selection
 ```
 
-###Using bower
+### Using bower
 ```
 bower install angular-multiple-selection
 ```
 
-###From source
+### From source
 
 Download [source](https://github.com/maxazan/angular-multiple-selection/archive/master.zip) from github.com
 
-##Usage
+## Usage
 * Add `multiple-selection.min.js` file to your application
 ```html
 <script type="text/javascript" src="multiple-selection.min.js"></script>
@@ -40,7 +40,7 @@ Download [source](https://github.com/maxazan/angular-multiple-selection/archive/
 * Customize css
 
 
-##How it works
+## How it works
 Each selectable item has it`s own angular scope with variables
 
 | Name  | Description |
@@ -49,7 +49,7 @@ Each selectable item has it`s own angular scope with variables
 | isSelecting  | `true` if element now selecting. It means it enters in selection rectangle when you dragging |
 | isSelected  | `true` if element selected |
 
-###How to customize
+### How to customize
 
 * Add `ng-class` to your item
 ```html
